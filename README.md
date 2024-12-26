@@ -1,77 +1,65 @@
-# FBShareBoost - Installation Guide for Termux
+# THOSS AUTO SHARE TOOL
 
-## Prerequisites
-First, make sure your Termux is up to date:
+An efficient tool for automated Facebook post sharing with persistent session support.
+
+![Thoss Banner](https://raw.githubusercontent.com/yurievisu/thoss/main/img/thoss.png)
+
+## Termux Installation
 
 ```bash
 pkg update && pkg upgrade
-```
-
-## Installation Steps
-
-1. Install required packages in Termux:
-```bash
-pkg install python
-pkg install git
-```
-
-2. Clone the repository:
-```bash
-git clone https://github.com/yourusername/fbshareboost.git](https://github.com/yurievisu/thoss.git
+pkg install python git
+git clone https://github.com/yurievisu/thoss.git
 cd thoss
-```
-
-3. Install Python dependencies:
-```bash
 pip install -r requirements.txt
+python runshare-ENC.py
 ```
 
-## Running the Tool
+## Key Features
 
-1. Run the script:
-```bash
-python boost-ENC.py
-```
+- 🔄 Continuous share automation
+- 🕒 Real-time PH timezone tracking
+- 🔐 Cookie persistence
+- 🔄 Auto-retry mechanism
+- 📊 Live share count display
+- ⚡ Fast execution
+- 📱 Mobile-friendly
+
+## How to Get Facebook Cookie
+
+1. Login to Facebook (Chrome/Firefox)
+2. Open DevTools (F12)
+3. Go to Network tab
+4. Select any facebook.com request
+5. Find 'cookie' in request headers
+6. Copy complete cookie value
+
+## Important Notes
+
+- 🔒 Never share your cookies
+- 🔗 Use HTTPS links only
+- 📈 Share count must be > 0
+- 🔑 Keep cookies private
+- 🌐 Post must be public
 
 ## Troubleshooting
 
-If you encounter any errors during installation:
+✅ Check internet connection
+✅ Verify cookie validity
+✅ Confirm post URL format
+✅ Ensure post is shareable
+✅ Validate share count
 
-1. Make sure all packages are up to date:
-```bash
-pkg update && pkg upgrade
-```
+## Support
 
-2. Install Python pip if not installed:
-```bash
-pkg install python-pip
-```
-
-3. If you get SSL errors, install certificates:
-```bash
-pkg install openssl
-```
-
-4. If aiohttp installation fails, install these first:
-```bash
-pkg install build-essential
-pkg install python-dev
-```
-
-## File Structure
-```
-fbshareboost/
-├── fbshare.py          # Main script
-├── requirements.txt    # Python dependencies
-└── README.md          # This file
-```
-
-## Notes
-- Make sure you have a stable internet connection
-- Some packages might take time to install
-- If you get permission errors, try using `termux-setup-storage`
+For issues or queries:
+- Create an issue on GitHub
+- Contact: @yurievisu
 
 ## Credits
-- Developer: Ryo Evisu
-- Version: 1.0.0
-- Owned by: Thoss
+
+Created with ❤️ by Yuri
+
+## License
+
+This project is open source.
