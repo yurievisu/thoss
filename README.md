@@ -17,8 +17,8 @@ pkg install git
 
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/fbshareboost.git
-cd fbshareboost
+git clone https://github.com/yourusername/fbshareboost.git](https://github.com/yurievisu/thoss.git
+cd thoss
 ```
 
 3. Install Python dependencies:
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 1. Run the script:
 ```bash
-python fbshare.py
+python boost-ENC.py
 ```
 
 ## Troubleshooting
